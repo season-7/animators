@@ -52,7 +52,6 @@ table {
   ========================================
 */
 .header{
-    height: 650px;
 }
 
 .logo {
@@ -177,6 +176,10 @@ nav ul li {
 .section {
     background: #ddd;
     text-align: center;
+}
+
+.orbit {
+    height: 855px;
 }
 
 .section h2 {
