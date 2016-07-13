@@ -212,10 +212,6 @@ nav ul li {
     position: absolute;
 }
 
-.orbit:after { 
-    content: '';
-    background: transparent url(../images/pattern.png) repeat top left; 
-}
 
 .header {
     position: relative;
@@ -223,8 +219,32 @@ nav ul li {
 }
 
 
-@media only screen and (max-width: 768px) {
-    .section {
-        padding-top: 400px;
-    }
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+.orbit {
+  background: 0 0 url(http://ianfarb.com/wp-content/uploads/2013/10/nicholas-hodag.jpg);
+  width: 300px;
+  height: 200px;
+}
+
+.orbit:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
