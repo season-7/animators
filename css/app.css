@@ -56,10 +56,15 @@ table {
 
 .logo {
     float: left;
-    
+    padding: 20px;
+}
+
+.logo:hover {
+    color: #900c3f;
 }
 
 nav {
+    font-size: 20px;
     word-spacing: 20px;
     text-align: right;
     padding: 40px;
@@ -193,7 +198,7 @@ nav ul li {
 }
 
 .col img {
-    width: 30%
+    width: 30%;
 }
 
 .footer {
@@ -201,4 +206,25 @@ nav ul li {
     background-repeat: no-repeat; 
     padding: 100px;
     text-align: center;
+}
+
+.orbit {
+    position: absolute;
+}
+
+.orbit:after { 
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left; 
+}
+
+.header {
+    position: relative;
+    padding-bottom: 300px
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section {
+        padding-top: 400px;
+    }
 }
